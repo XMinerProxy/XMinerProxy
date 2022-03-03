@@ -7,7 +7,7 @@ if [[ $(command -v apt-get) || $(command -v yum) ]] && [[ $(command -v systemctl
         cmd="yum"
     fi
 else
-    echo "这个安装脚本不支持你的系统" && exit 1
+    echo "这个安装脚本不支持您的系统" && exit 1
 fi
 
 
@@ -28,8 +28,8 @@ install(){
     wget https://raw.githubusercontent.com/XMinerProxy/XMinerProxy/main/others/server.key -O /root/x_miner_proxy/server.key
     wget https://raw.githubusercontent.com/XMinerProxy/XMinerProxy/main/others/server.pem -O /root/x_miner_proxy/server.pem
     
-    wget https://github.com/XMinerProxy/XMinerProxy/releases/download/1.0.4/XMinerProxy_v1.0.4_linux_amd64.tar.gz -O /root/XMinerProxy_v1.0.4_linux_amd64.tar.gz
-    tar -zxvf /root/XMinerProxy_v1.0.4_linux_amd64.tar.gz -C /root/x_miner_proxy
+    wget https://github.com/XMinerProxy/XMinerProxy/releases/download/1.0.5/XMinerProxy_v1.0.5_linux_amd64.tar.gz -O /root/XMinerProxy_v1.0.5_linux_amd64.tar.gz
+    tar -zxvf /root/XMinerProxy_v1.0.5_linux_amd64.tar.gz -C /root/x_miner_proxy
     chmod 777 /root/x_miner_proxy/XMinerProxy
 
     screen -dmS x_miner_proxy
@@ -40,7 +40,7 @@ install(){
     screen -r x_miner_proxy -p 0 -X stuff $'\n'
 
     sleep 2s
-    echo "XMinerProxy V1.0.4已经安装到/root/x_miner_proxy"
+    echo "XMinerProxy V1.0.5已经安装到/root/x_miner_proxy"
     cat /root/x_miner_proxy/pwd.txt
     echo ""
     echo "您可以使用指令screen -r x_miner_proxy查看程式端口和密码"
@@ -55,21 +55,21 @@ uninstall(){
         if [ "$flag" = "yes" -o "$flag" = "ye" -o "$flag" = "y" ];then
             screen -X -S x_miner_proxy quit
             rm -rf /root/x_miner_proxy
-            echo "XMinerProxy已成功从您的伺服器上卸载"
+            echo "XMinerProxy已成功从您的服务器上卸载"
         fi
     fi
 }
 
 
 update(){
-    wget https://github.com/XMinerProxy/XMinerProxy/releases/download/1.0.4/XMinerProxy_v1.0.4_linux_amd64.tar.gz -O /root/XMinerProxy_v1.0.4_linux_amd64.tar.gz
+    wget https://github.com/XMinerProxy/XMinerProxy/releases/download/1.0.5/XMinerProxy_v1.0.5_linux_amd64.tar.gz -O /root/XMinerProxy_v1.0.5_linux_amd64.tar.gz
 
     if screen -list | grep -q "x_miner_proxy"; then
         screen -X -S x_miner_proxy quit
     fi
     rm -rf /root/x_miner_proxy/XMinerProxy
 
-    tar -zxvf /root/XMinerProxy_v1.0.4_linux_amd64.tar.gz -C /root/x_miner_proxy
+    tar -zxvf /root/XMinerProxy_v1.0.5_linux_amd64.tar.gz -C /root/x_miner_proxy
     chmod 777 /root/x_miner_proxy/XMinerProxy
 
     screen -dmS x_miner_proxy
@@ -80,7 +80,7 @@ update(){
     screen -r x_miner_proxy -p 0 -X stuff $'\n'
 
     sleep 2s
-    echo "XMinerProxy 已经更新至V1.0.4版本并启动"
+    echo "XMinerProxy 已经更新至V1.0.5版本并启动"
     cat /root/x_miner_proxy/pwd.txt
     echo ""
     echo "您可以使用指令screen -r x_miner_proxy查看程式输出"
@@ -151,7 +151,7 @@ check_limit(){
 
 echo "======================================================="
 echo "XMinerProxy 一键脚本，脚本默认安装到/root/x_miner_proxy"
-echo "                                   脚本版本：V1.0.4"
+echo "                                   脚本版本：V1.0.5"
 echo "  1、安  装"
 echo "  2、卸  载"
 echo "  3、更  新"
