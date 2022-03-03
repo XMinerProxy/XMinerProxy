@@ -1,13 +1,19 @@
-#### 近期发现有人使用默认密码恶意扫描程序后台，请检查自己的后台密码是否为默认弱密码。如之前为默认密码没有修改，请第一时间检查自定义矿池中是否出现非自己添加的第三方IP。
+#### ETHASH-1.0.5版本已发布，强烈建议1.0.4版本用户更新！
 ----
 #### 当前版本：{BUILD_VERSION}({BUILD_DATE})
-#### 最新版本：[V1.0.4_ETHASH(2022-02-26)](https://github.com/XMinerProxy/XMinerProxy/releases/tag/1.0.4) - [[历史更新日志]](https://github.com/XMinerProxy/XMinerProxy/releases)
+#### 最新版本：[V1.0.5_ETHASH(2022-03-03)](https://github.com/XMinerProxy/XMinerProxy/releases/tag/1.0.5) - [[历史更新日志]](https://github.com/XMinerProxy/XMinerProxy/releases)
 #### 联系我们：[Telegram讨论群组（欢迎向我们提出建议）](https://t.me/XMinerProxy)、[GitHub](https://github.com/XMinerProxy/XMinerProxy)
-#### V1.0.4更新内容：
-- 优化1.0.2/1.0.3版本的内存占用情况
-- 修复ETC内置矿池地址中2Miners亚洲节点信息配置错误的问题
-- 修复ETC自定义矿池地址无法连接的问题
-- 修复1.0.3无法动态修改抽水率的问题
+#### V1.0.5更新内容：
+- 对程序进行大幅度优化内存使用(实测60GH算力500带机量情况下仅需360M内存)
+- 对茉莉(JasMiner)品牌的专业矿机进行优化实现完美兼容，并添加更多专业矿机支持
+- 新增后台-账户列表处的搜索框，用于对矿机名/钱包地址/IP地址进行检索
+- 修改内置矿池列表中HiveOnPool自动节点的地址为eth.hiveon.com:24443
+- 修复动态修改抽水率的情况下可能引发的抽水不准确问题
+- 内置Doh自适应安全化域名解析方案，防止DNS污染情况的出现
+- 添加代理池设置NiceHash/Stratum2协议开关选项
+- 优化主程序启动时代理池自动开启的逻辑
+- 优化后台-程序设定处的人性化设计
+- 新增后台-程序设定处的性能报告下载
 #### 注意：由于协议差异，目前无法实现跨协议抽水，所以如果设置CrazyPool为归集目标的话需要客户端均使用NiceHash/Stratum2协议。
 ----
 #### 掉线原因参考表：
