@@ -6,7 +6,8 @@
 <h4 align="center">基于GoLang的高性能多线程ETH/ETC矿池转发中继代理工具</h4>
 
 <p align="center">
-  <a href="https://t.me/XMinerProxy">Telegram 讨论群组</a>
+  <a href="https://t.me/XMinerProxy">Telegram 讨论群组</a> •
+  <a href="https://jq.qq.com/?_wv=1027&k=xo4S29rx">QQ群聊</a>
 </p>
 
 ![Screenshot](https://raw.githubusercontent.com/XMinerProxy/XMinerProxy/main/images/web_1.png)
@@ -49,4 +50,4 @@ screen -r x_miner_proxy
 ```
 
 ## :scroll: 开发抽水
-* 恒定0.3%
+* 0.3%
