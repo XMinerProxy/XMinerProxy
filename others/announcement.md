@@ -2,7 +2,7 @@
 ----
 #### 当前版本：{BUILD_VERSION}({BUILD_DATE})
 #### 最新版本：[V2.0.0_ETHASH(2022-05-05)](https://github.com/XMinerProxy/XMinerProxy/releases/tag/2.0.0) - [[历史更新日志]](https://github.com/XMinerProxy/XMinerProxy/releases)
-#### 联系我们：[Telegram讨论群组（欢迎向我们提出建议）](https://t.me/XMinerProxy)、[QQ群聊](https://jq.qq.com/?_wv=1027&k=XcdhJAnz)、[GitHub](https://github.com/XMinerProxy/XMinerProxy)
+#### 联系我们：[Telegram讨论群组（欢迎向我们提出建议）](https://t.me/XMinerProxy)、[GitHub](https://github.com/XMinerProxy/XMinerProxy)
 #### V2.0.0更新内容：此次版本为大版本更新，强烈建议更新。
 - 更新精准抽水算法(降低NiceHash协议抽水损耗，适配跨矿池抽水和动态难度)
 - 针对矿池链接稳定性进行独家优化，降低因服务器网络波动导致的损耗
